@@ -53,25 +53,97 @@ body {
     color: black !important;
     font-size: 14px;
 }
-a:hover {
-    color: #e61d2b !important;
-}
-.btn-primary {
-    border-radius: 8px;
+
+.btn-secondary {
+    border-radius: 8px !important;
     color: rgb(0, 0, 0) !important;
     background-color: #F8BABF !important;
-    border: none;
+    border-color: #f8babf !important;
     height: 40px;
     width: 230px;
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgb(255 209 209 / 32%) !important;
-  outline: none !important;
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus { 
+  box-shadow: none !important;
+}
+
+.btn-secondary:focus {
+  box-shadow: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: #E61D2B !important;
+  color: white !important;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
 }
 
 button:focus {
   outline: none !important;
+}
+
+.margenes-soluciones {
+  margin: 25px;
+}
+
+.span-boton {
+  font-family: 'Circular Std Bold', sans-serif !important;
+  font-size: 19px;
+}
+
+.dropdown-menu {
+  width: 42rem;
+  right: 0rem !important;
+  left: -28em !important;
+  top: 100%;
+  font-size: 1rem;
+  color: #212529;
+  background-color: #FAFAFA !important;
+  background-clip: padding-box;
+  border: none !important;
+  border-radius: 15px !important;
+  -webkit-box-shadow: 7px 7px 5px -3px rgba(230,230,230,1);
+}
+
+.soluciones {
+    height: 18rem;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.dropdown-item {
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 97%;
+  clear: both;
+  font-weight: 400;
+  padding: 10px !important;
+  background-color: #fff !important;
+  border-radius: 19px !important;
+  height: 100%;
+  border: 1px solid #e3e3e3 !important;
+}
+
+.dropdown-item img{
+  width: 5rem;
+  padding-bottom: 11px;
+}
+
+.dropdown-item span {
+  font-family: 'Circular Std Medium', sans-serif ;
+  font-size: 12px;
+  padding-right: 3rem;
+}
+.dropdown-item i {
+  padding-left: 15rem;
+}
+
+.dropdown-item:hover {
+  -webkit-box-shadow: 3px 4px 21px -9px rgba(230,29,43,1) !important;
 }
 
 .text-boton {
@@ -498,9 +570,7 @@ button:focus {
 }
 
 .areas-tresolu {
-  padding-left: 45px;
-  display: grid;
-  align-items: center;
+  margin: 8px;
 }
 
 .titulo-areas {
